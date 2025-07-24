@@ -1,7 +1,7 @@
 import './App.css'
-import Header from './Components/header.jsx'
-import MainPage from './Components/mainPage.jsx'
-import Footer from './Components/footer.jsx'
+import Header from './components/header.jsx'
+import MainPage from './components/mainPage.jsx'
+import Footer from './components/footer.jsx'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
