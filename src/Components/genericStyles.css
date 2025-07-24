@@ -1,0 +1,12 @@
+.hero__tittle{
+    color: #323232;
+    font-size:2.5rem;
+}
+
+.hero__tittle-secondary-color{
+    color: #04ddb2;
+}
+
+.hero__description{
+    font-size: 1.1rem;
+}
