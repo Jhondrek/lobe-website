@@ -94,8 +94,8 @@ main{
 
     .long_cathegories{
         display: flex;
-        justify-content: center;
-        max-width:1300px;
+        justify-content: space-between;
+        width:1300px;
         padding: 0px 100px 0px 100px;
         margin: auto;
         margin-top: 80px;
@@ -104,6 +104,7 @@ main{
 
     .long_cathegories__qa{
         padding-left: 40px;
+        width: fit-content;
     }
 
     .long_cathegories__q{
@@ -113,6 +114,8 @@ main{
         color: #323232;
         font-size: 1.5rem;
         font-weight: 500;
+        width: fit-content;
+
     }
 
     .long_cathegories__a{
@@ -122,6 +125,7 @@ main{
         color: #323232;
         font-size: 1.5rem;
         font-weight: 500;
+        width: fit-content;
     }
 
     .long_cathegories__q--container{
@@ -146,6 +150,10 @@ main{
 
     .clicked{
         height: fit-content;
+    }
+
+    .clicked--angle{
+        transform: rotate(180deg);
     }
 
 

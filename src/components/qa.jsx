@@ -26,16 +26,16 @@ export default function Qa(){
         <div className="long_cathegories__qa" onClick={()=> toggleClickedState(i)}>
             <div className="long_cathegories__q--container">
                 <button  className="long_cathegories__q">{qa.question}</button>
-                <FontAwesomeIcon icon={faAngleUp} className={`icon `} />
+                <FontAwesomeIcon icon={faAngleUp} className={`icon ${ toggleState[i] ? 'clicked--angle' : ""}`} />
             </div>
             <p className={`long_cathegories__a ${ toggleState[i] ? 'clicked' : ""}`}>{qa.answer}</p>
         </div>
     )
-
 
     return(
         <section className="long__cathegories__section">
             {qAsJsx}
         </section>
     )
+    
 }
