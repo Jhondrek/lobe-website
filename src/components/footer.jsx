@@ -19,30 +19,36 @@ export default function(){
     return(
         
     <footer>
-        <span className='hero__divider'/>
 
         <div className="footer__dropdown">
-            <button className="footer__btn" onClick={()=>toggleIsClicked(0)}>About <span className={`footer__btn--arrow ${isClicked[0] && "clicked"}`}>∨</span></button>
 
-            <ol className={`footer__dropdown__options ${isClicked[0] && "clicked"}`}>
-                <li className="footer__dropdown__option">Download</li>
-                <li className="footer__dropdown__option">Overview</li>
-                <li className="footer__dropdown__option">Examples</li>
-            </ol>
+            <div className="footer__dropdown__section">
+                <button className="footer__btn" onClick={()=>toggleIsClicked(0)}>About <span className={`footer__btn--arrow ${isClicked[0] && "clicked"}`}>∨</span></button>
 
-            <button className="footer__btn" onClick={()=>toggleIsClicked(1)}>General <span className={`footer__btn--arrow ${isClicked[1] && "clicked"}`}>∨</span></button>
-            <ol className={`footer__dropdown__options ${isClicked[1] && "clicked"}`}>
-                <li className="footer__dropdown__option">Overview</li>
-                <li className="footer__dropdown__option">Download</li>
-                <li className="footer__dropdown__option">Examples</li>
-            </ol>
+                <ol className={`footer__dropdown__options ${isClicked[0] && "clicked"}`}>
+                    <li className="footer__dropdown__option">Download</li>
+                    <li className="footer__dropdown__option">Overview</li>
+                    <li className="footer__dropdown__option">Examples</li>
+                </ol>
+            </div>
 
-            <button className="footer__btn" onClick={()=>toggleIsClicked(2)}>Resources <span className={`footer__btn--arrow ${isClicked[2] && "clicked"}`}>∨</span></button>
-            <ol className={`footer__dropdown__options ${isClicked[2] && "clicked"}`}>
-                <li className="footer__dropdown__option">Help</li>
-                <li className="footer__dropdown__option">Contact</li>
-                <li className="footer__dropdown__option">Privacy</li>
-            </ol>
+            <div className="footer__dropdown__section">
+                <button className="footer__btn" onClick={()=>toggleIsClicked(1)}>General <span className={`footer__btn--arrow ${isClicked[1] && "clicked"}`}>∨</span></button>
+                <ol className={`footer__dropdown__options ${isClicked[1] && "clicked"}`}>
+                    <li className="footer__dropdown__option">Overview</li>
+                    <li className="footer__dropdown__option">Download</li>
+                    <li className="footer__dropdown__option">Examples</li>
+                </ol>
+            </div>
+
+            <div className="footer__dropdown__section">
+                <button className="footer__btn" onClick={()=>toggleIsClicked(2)}>Resources <span className={`footer__btn--arrow ${isClicked[2] && "clicked"}`}>∨</span></button>
+                <ol className={`footer__dropdown__options ${isClicked[2] && "clicked"}`}>
+                    <li className="footer__dropdown__option">Help</li>
+                    <li className="footer__dropdown__option">Contact</li>
+                    <li className="footer__dropdown__option">Privacy</li>
+                </ol>
+            </div>
         </div>
 
         <div className="footer__socials">

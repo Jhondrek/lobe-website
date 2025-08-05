@@ -1,7 +1,12 @@
 import './App.css'
-import Header from './components/header.jsx'
-import MainPage from './components/mainPage.jsx'
-import Footer from './components/footer.jsx'
+import MainPage from './components/mainPageComp.jsx'
+import Layout from './components/Layout.jsx'
+import Examples from "./components/examples.jsx"
+import Help from "./components/Help.jsx"
+import Qa from "./components/qa.jsx"
+
+
+
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -9,12 +14,17 @@ function App() {
   
   return (
     <BrowserRouter>
-      <Header/>
       <Routes>
-        <Route path='/' element={<MainPage/>}>
+        <Route element={<Layout/>}>
+          <Route path='/' element={<MainPage/>}/>
+          <Route path="/examples" element={<Examples/>}/>
+
+          <Route path="/help" element={<Help/>}>
+            <Route path=':id' element={<Qa/>}/>
+          </Route>
+
         </Route>
       </Routes>
-      <Footer/>
     </BrowserRouter>
   )
 }

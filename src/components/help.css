@@ -1,0 +1,154 @@
+.faq{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 25px;
+    width: 90%;
+    margin: auto;
+}
+
+main{
+    margin-bottom: 50px;
+}
+
+.faq__qa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__arrow{
+    margin-left: 10px;
+    transition: 1s ease;
+}
+
+.faq__arrow.active{
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+
+.faq__answer{
+    padding-top:10px;
+    height: 0;
+    overflow: hidden;
+    transition: 1s ease;
+
+}
+
+.faq__answer.active{
+    height: fit-content;
+    padding: 5px 0px 20px 0px;
+    padding-top:15px;
+
+}
+
+.faq__question{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.faq__division--line{
+    height: 0.5px;
+    width: 100%;
+    background-color: #323232;
+    margin-top: auto;
+    display: block;
+    margin-top: 35px;
+}
+
+.my__link{
+    text-decoration: underline;
+}
+
+.long_cathegories{
+    display: none;
+}
+
+@media screen and (min-width: 786px) {
+
+    .faq{
+        display: none;
+    }
+    
+    
+    .long_cathegories__cathegories{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cathegorie{
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: white;
+        background-color: #04ddb2;
+        width: 150px;
+        text-align: center;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight:600;
+    }
+
+    .a{
+        background-color: black;
+    }
+
+    .long_cathegories{
+        display: flex;
+        justify-content: center;
+        max-width:1300px;
+        padding: 0px 100px 0px 100px;
+        margin: auto;
+        margin-top: 80px;
+        
+    }
+
+    .long_cathegories__qa{
+        padding-left: 40px;
+    }
+
+    .long_cathegories__q{
+        padding-left: 40px;
+        background-color: #fff;
+        border: none;
+        color: #323232;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .long_cathegories__a{
+        padding-left: 40px;
+        background-color: #fff;
+        border: none;
+        color: #323232;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .long_cathegories__q--container{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icon{
+        font-size: 1.5rem;
+        transition: 0.7s ease;
+    }
+
+    .long_cathegories__a{
+        color: #323232;
+        height: 0px;
+        overflow: hidden;
+        transition: 1s ease;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .clicked{
+        height: fit-content;
+    }
+
+
+
+}
+   
