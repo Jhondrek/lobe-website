@@ -8,7 +8,7 @@ import logo from "../assets/logo.png"
 
 
 
-export default function(){
+export default function Footer(){
 
     const [isClicked, setIsClicked] = useState([false,false, false])
 

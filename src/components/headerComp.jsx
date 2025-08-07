@@ -6,6 +6,7 @@ export default function Header(){
 
     const [isMenuOpen, setMenuOpen] = useState(false)
 
+    // toggles the menu state from open/closed
     function toggleActive(){
         setMenuOpen((prevIsMenuOpen)=>!prevIsMenuOpen)
     }
@@ -30,7 +31,7 @@ export default function Header(){
 
                     <li><NavLink className={({isActive})=> ` ${isActive ? "my__link navmenu__link" : "navmenu__link"}`} to="/examples" onClick={()=>{toggleActive()}}>Examples</NavLink></li>
 
-                    <li><NavLink className={({isActive})=> ` ${isActive ? "my__link navmenu__link" : "navmenu__link"}`} to="/help/lobe" onClick={()=>{toggleActive()}}>Help</NavLink></li>
+                    <li><NavLink className={({isActive})=> ` ${isActive ? "my__link navmenu__link" : "navmenu__link"}`} to="/help" onClick={()=>{toggleActive()}}>Help</NavLink></li>
                 </ul>
             </nav>
 

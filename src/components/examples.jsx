@@ -16,7 +16,7 @@ export default function Examples(){
                 <p className="example__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam facere officia? Obcaecati odio iusto minima, unde fugit autem iste facere.</p>
             </article>
         )))
-    },[0])
+    },[])
 
     return(
         <main className="example__container">
